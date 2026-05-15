@@ -15,13 +15,13 @@ spring:
       auto-offset-reset: earliest
       enable-auto-commit: true
       bootstrap-servers:
-        - localhost:9092
+        - localhost:29092
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
     streams:
-      application-id: kafka-connect-sample-${random.uuid}
+      application-id: kafka-connect-${random.uuid}
       bootstrap-servers:
-        - localhost:9092
+        - localhost:29092
       properties:
         default:
           key:
